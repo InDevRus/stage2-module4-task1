@@ -3,6 +3,7 @@ package com.mjc.stage2;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
+@SuppressWarnings({"unused", "LombokGetterMayBeUsed"})
 @EqualsAndHashCode
 @ToString
 public class Employee {
@@ -69,6 +70,38 @@ public class Employee {
     }
 
     public static class EmployeeBuilder {
-        // Write your code here!
+        private final Employee builtInstance;
+
+        public EmployeeBuilder() {
+            builtInstance = new Employee();
+        }
+
+        public void setName(String name) {
+            builtInstance.name = name;
+        }
+
+        public void setLastName(String lastName) {
+            builtInstance.lastName = lastName;
+        }
+
+        public void setPosition(String position) {
+            builtInstance.position = position;
+        }
+
+        public void setPhone(String phone) {
+            builtInstance.phone = phone;
+        }
+
+        public void setEmail(String email) {
+            builtInstance.email = email;
+        }
+
+        public void setCarNumber(String carNumber) {
+            builtInstance.lastName = carNumber;
+        }
+
+        public Employee build() {
+            return builtInstance;
+        }
     }
 }
