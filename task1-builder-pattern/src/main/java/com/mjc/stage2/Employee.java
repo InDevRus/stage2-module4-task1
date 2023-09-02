@@ -76,28 +76,34 @@ public class Employee {
             builtInstance = new Employee();
         }
 
-        public void setName(String name) {
+        public EmployeeBuilder setName(String name) {
             builtInstance.name = name;
+            return this;
         }
 
-        public void setLastName(String lastName) {
+        public EmployeeBuilder setLastName(String lastName) {
             builtInstance.lastName = lastName;
+            return this;
         }
 
-        public void setPosition(String position) {
+        public EmployeeBuilder setPosition(String position) {
             builtInstance.position = position;
+            return this;
         }
 
-        public void setPhone(String phone) {
+        public EmployeeBuilder setPhone(String phone) {
             builtInstance.phone = phone;
+            return this;
         }
 
-        public void setEmail(String email) {
+        public EmployeeBuilder setEmail(String email) {
             builtInstance.email = email;
+            return this;
         }
 
-        public void setCarNumber(String carNumber) {
+        public EmployeeBuilder setCarNumber(String carNumber) {
             builtInstance.lastName = carNumber;
+            return this;
         }
 
         public Employee build() {
