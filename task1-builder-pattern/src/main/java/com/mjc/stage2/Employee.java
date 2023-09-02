@@ -14,9 +14,6 @@ public class Employee {
     private String email;
     private String carNumber;
 
-    public Employee() {
-    }
-
     public String getName() {
         return name;
     }
@@ -102,7 +99,7 @@ public class Employee {
         }
 
         public EmployeeBuilder setCarNumber(String carNumber) {
-            builtInstance.lastName = carNumber;
+            builtInstance.carNumber = carNumber;
             return this;
         }
 
